@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+</head>
+<body>
+<input id="box" class="box" type="text" name="text" placeholder="enter something" required>
+
+<input class= "btn" onclick="hide()"
+type="button" value="click to hide heading">
+<h1 id="one"></h1>
+<script type="text/javascript">
+
+function hide(){
+	var text=document.getElementById('box').value;
+	document.getElementById('one').innerHTML=text;
+	console.log($('.box').getValue());
+}
+</script>
+</body>
+</html>
